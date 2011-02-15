@@ -1,0 +1,11 @@
+production:
+  delivery_method: :smtp
+  smtp_settings:
+    tls: true
+    enable_starttls_auto: <%= ENV['SMTP_AUTHENTICATION'] %>
+    address: <%= SMTP_SERVER %>
+    port: <%= SMT_PORT
+    domain: <%= SMTP_DOMAIN %>
+    authentication: <%= SMTP_AUTHENTICATION %>
+    user_name: <%= SMTP_USER %>
+    password: <%= SMTP_PASS %>
