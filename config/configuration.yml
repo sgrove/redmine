@@ -62,7 +62,7 @@ production:
     smtp_settings:
       tls: <%= ENV['SMTP_TLS'] %>
       address: <%= ENV['SMTP_SERVER'] %>
-      port: <%= ENV['SMT_PORT'] %>
+      port: <%= ENV['SMTP_PORT'] %>
       domain: <%= ENV['SMTP_DOMAIN'] %>
       authentication: <%= ENV['SMTP_AUTHENTICATION'] %>
       user_name: <%= ENV['SMTP_USER'] %>
