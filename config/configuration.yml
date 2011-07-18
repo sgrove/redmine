@@ -56,18 +56,16 @@
 # This requires some additional configuration.  See the article at:
 # http://redmineblog.com/articles/setup-redmine-to-send-email-using-gmail/
 #
-production:
-  email_delivery:
-    delivery_method: :smtp
-    smtp_settings:
-      tls: <%= ENV['SMTP_TLS'] %>
-      address: <%= ENV['SMTP_SERVER'] %>
-      port: <%= ENV['SMTP_PORT'] %>
-      domain: <%= ENV['SMTP_DOMAIN'] %>
-      authentication: <%= ENV['SMTP_AUTHENTICATION'] %>
-      user_name: <%= ENV['SMTP_USER'] %>
-      password: <%= ENV['SMTP_PASS'] %>
-#
+default:
+  delivery_method: :smtp
+  smtp_settings:
+    tls: <%= ENV['SMTP_TLS'] %>
+    address: <%= ENV['SMTP_SERVER'] %>
+    port: <%= ENV['SMTP_PORT'] %>
+    domain: <%= ENV['SMTP_DOMAIN'] %>
+    authentication: <%= ENV['SMTP_AUTHENTICATION'] %>
+    user_name: <%= ENV['SMTP_USER'] %>
+    password: <%= ENV['SMTP_PASSWORD'] %>
 #
 # === More configuration options
 #

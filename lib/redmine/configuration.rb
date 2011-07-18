@@ -56,7 +56,7 @@ module Redmine
             ActionMailer::Base.send("#{k}=", v)
           end
         end
-          
+
         @config
       end
       
@@ -69,7 +69,7 @@ module Redmine
       private
       
       def load_from_yaml(filename, env)
-        yaml = YAML::load_file(filename)
+        yaml = YAML::load(ERB.new(IO.read(filename)).result)
         conf = {}
         if yaml.is_a?(Hash)
           if yaml['default']

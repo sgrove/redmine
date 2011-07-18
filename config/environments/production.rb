@@ -27,4 +27,4 @@ config.action_controller.perform_caching             = true
 config.action_mailer.raise_delivery_errors = false
 
 # No email in production log
-config.action_mailer.logger = nil
+# config.action_mailer.logger = nil
